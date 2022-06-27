@@ -1,15 +1,14 @@
-button {
-  background: rgb(79, 202, 30);
-  padding: 5px 10px;
-  border-radius: 2em;
-}
-
 body {
   background: radial-gradient(
     592px at 48.2% 50%,
     rgba(255, 255, 249, 0.6) 0%,
     rgb(160, 199, 254) 74.6%
   );
+  margin: 50px;
+}
+
+h1 {
+  margin: 20px;
 }
 
 ul {
@@ -42,4 +41,10 @@ li {
 
 .current {
   font-size: 40px;
+}
+
+.button {
+  background: rgb(79, 202, 30);
+  padding: 5px 10px;
+  border-radius: 2em;
 }

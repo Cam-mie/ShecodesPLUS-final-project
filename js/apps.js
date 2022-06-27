@@ -42,7 +42,23 @@ function showTemp(response) {
   );
 }
 
-let apikey = "cafbd7974d35bf96f37717d1116fdc4b";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Montreal&appid=${apikey}&units=metric`;
+//Search Engine function
+function search(city) {
+  let apikey = "cafbd7974d35bf96f37717d1116fdc4b";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`;
 
-axios.get(apiUrl).then(showTemp);
+  axios.get(apiUrl).then(showTemp);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let searchcityniputElement = document.querySelector("#search-city-input");
+  search(searchcityniputElement.value);
+}
+
+search("New York");
+
+//Search Engine
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
