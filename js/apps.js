@@ -2,7 +2,6 @@
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
-
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -28,6 +27,7 @@ function showTemp(response) {
   let descriptionElement = document.querySelector("#description");
   let windElement = document.querySelector("#wind");
   let humidityElement = document.querySelector("#humidity");
+  let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
@@ -52,13 +52,11 @@ function search(city) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  let searchcityniputElement = document.querySelector("#search-city-input");
-  search(searchcityniputElement.value);
+  let cityinputElement = document.querySelector("#search-city-input");
+  search(cityinputElement.value);
 }
 
 search("New York");
-
-//Search Engine
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
