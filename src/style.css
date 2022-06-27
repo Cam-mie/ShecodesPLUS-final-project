@@ -7,6 +7,34 @@ button {
   padding: 5px 10px;
   border-radius: 2em;
 }
+
+body {
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(160, 199, 254) 74.6%
+  );
+}
+
+ul {
+  margin: 10px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+.searches {
+  margin: 20px 20px;
+}
+
 .forecast {
   background: white;
   border-radius: 2em;
@@ -15,13 +43,8 @@ button {
   margin: 10px auto;
   border: 1px solid black;
 }
-body {
-  background: radial-gradient(
-    592px at 48.2% 50%,
-    rgba(255, 255, 249, 0.6) 0%,
-    rgb(160, 199, 254) 74.6%
-  );
-}
-.searches {
-  margin: 20px 20px;
+
+.current {
+  font-size: 25px;
+  font-weight: 100px;
 }
