@@ -30,7 +30,7 @@
             type="search"
             class="form-control"
             placeholder="Enter city here"
-            id="search-city-input"
+            id="search-city"
             autocomplete="off"
           />
         </div>
@@ -44,13 +44,16 @@
     <div class="row">
       <div class="col-md-6">
         <ul>
-          <li>Last updated at <span id="date"></span></li>
+          <li>Last updated on <span id="date"></span></li>
           <li id="description"></li>
         </ul>
       </div>
       <div class="col-md-6">
         <strong id="temperature" class="current"></strong>
-        °C | °F
+        <span
+          ><a href="#" id="celsius-link" class="active">°C</a> |
+          <a href="#" id="fahrenheit-link" class="active"> °F</a></span
+        >
       </div>
     </div>
     <ul>
@@ -97,7 +100,8 @@
 
     <a href="https://github.com/Cam-mie/ShecodesPLUS-final-project.git"
       >Open-source code</a
-    >, by Camille Duplessis
+    >, by Camille Duplessis and hosted on
+    <a href="https://prismatic-moxie-d76a8a.netlify.app">Netlify</a>
     <script src="js/apps.js"></script>
   </body>
 </html>
