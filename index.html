@@ -15,7 +15,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
   
     <title>Weather App☀</title>
   </head>
@@ -35,31 +36,25 @@
           </div>
 
 
-        <h1> <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny"/>Montreal</h1>
+         <h1><img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny"/><span id="city"></span></h1>
 
   <div class="row">
     <div class="col-md-6">
 <ul>
-  <li>Current date and time</li>
-  <li>description</li>
+  <li id="date">Current date and time</li>
 </ul>
 </div>
 <div class="col-md-6">
-<span class="current">  <strong>12 </strong> °C | °F</span>
+<strong id="temperature"></strong>
+°C | °F
 </div>
   </div>      
   <ul> 
-  <li>Description</li>  <li>Wind: <span id="wind"></span> km/h</li>
+  <li id="description">Description</li>
+  <li>Wind: <span id="wind"></span> km/h</li>
   </ul>
     </div>
 </div>
-
-         
-      
-
-
-
-
 
  </div>
 
