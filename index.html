@@ -12,96 +12,99 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <title>Weather App☀</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <form id="search-fom">
-      <div class="row">
-        <div class="col-9">
-          <input
-            type="search"
-            class="form-control"
-            placeholder="Enter city here"
-            id="search-city"
-            autocomplete="off"
-          />
-        </div>
-        <div class="col-3">
-          <input type="submit" value="Go" class="button" />
-        </div>
-      </div>
-    </form>
-
-    <h1><img src="" alt="clear" id="icon" /> <span id="city"></span></h1>
-    <div class="row">
-      <div class="col-md-6">
-        <ul>
-          <li>Last updated on <span id="date"></span></li>
-          <li id="description"></li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <strong id="temperature" class="current"></strong>
-        <span
-          ><a href="#" id="celsius-link" class="active">°C</a> |
-          <a href="#" id="fahrenheit-link" class="active"> °F</a></span
-        >
-      </div>
-    </div>
-    <ul>
-      <li>Humidity: <span id="humidity"></span>%</li>
-      <li>Wind: <span id="wind"></span> km/h</li>
-    </ul>
-
-    <div class="forecast">
-      <strong>
+    <div class="container">
+      <form id="search-form">
         <div class="row">
-          <div class="col">Wed</div>
-          <div class="col">Thurs</div>
-          <div class="col">Fri</div>
-          <div class="col">Sat</div>
-          <div class="col">Sun</div>
+          <div class="col-9">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Enter city here"
+              id="search-city"
+              autocomplete="off"
+            />
+          </div>
+          <div class="col-3">
+            <input type="submit" value="Go" class="button" />
+          </div>
         </div>
-      </strong>
+      </form>
 
+      <h1><img src="" alt="clear" id="icon" /> <span id="city"></span></h1>
       <div class="row">
-        <div class="col">☀</div>
-        <div class="col">🌨</div>
-        <div class="col">🌨</div>
-        <div class="col">☀</div>
-        <div class="col">🌤</div>
+        <div class="col-md-6">
+          <ul>
+            <li>Last updated on <span id="date"></span></li>
+            <li id="description"></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <strong id="temperature" class="current"></strong>
+          <span
+            ><a href="#" id="celsius-link" class="active">°C</a> |
+            <a href="#" id="fahrenheit-link" class="active"> °F</a></span
+          >
+        </div>
+      </div>
+      <ul>
+        <li>Humidity: <span id="humidity"></span>%</li>
+        <li>Wind: <span id="wind"></span> km/h</li>
+      </ul>
+
+      <div class="forecast">
+        <strong>
+          <div class="row">
+            <div class="col">Wed</div>
+            <div class="col">Thurs</div>
+            <div class="col">Fri</div>
+            <div class="col">Sat</div>
+            <div class="col">Sun</div>
+          </div>
+        </strong>
+
+        <div class="row">
+          <div class="col">☀</div>
+          <div class="col">🌨</div>
+          <div class="col">🌨</div>
+          <div class="col">☀</div>
+          <div class="col">🌤</div>
+        </div>
+
+        <div class="row">
+          <div class="col">9°C</div>
+          <div class="col">10°C</div>
+          <div class="col">7°C</div>
+          <div class="col">10°C</div>
+          <div class="col">8°C</div>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col">9°C</div>
-        <div class="col">10°C</div>
-        <div class="col">7°C</div>
-        <div class="col">10°C</div>
-        <div class="col">8°C</div>
+      <div class="searches">
+        <div class="row">
+          <div class="col-2">Sunshine Coast</div>
+          <div class="col-2">Brisbane</div>
+          <div class="col-2">Montreal</div>
+          <div class="col-2">Vancouver</div>
+        </div>
       </div>
+
+      <a href="https://github.com/Cam-mie/ShecodesPLUS-final-project.git"
+        >Open-source code</a
+      >, by Camille Duplessis and hosted on
+      <a href="https://prismatic-moxie-d76a8a.netlify.app">Netlify</a>
     </div>
-
-    <div class="searches">
-      <div class="row">
-        <div class="col-2">Sunshine Coast</div>
-        <div class="col-2">Brisbane</div>
-        <div class="col-2">Montreal</div>
-        <div class="col-2">Vancouver</div>
-      </div>
-    </div>
-
-    <a href="https://github.com/Cam-mie/ShecodesPLUS-final-project.git"
-      >Open-source code</a
-    >, by Camille Duplessis and hosted on
-    <a href="https://prismatic-moxie-d76a8a.netlify.app">Netlify</a>
     <script src="js/apps.js"></script>
   </body>
 </html>
