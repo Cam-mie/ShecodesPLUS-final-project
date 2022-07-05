@@ -52,3 +52,9 @@ li {
 .active {
   text-decoration: none;
 }
+
+.open-source {
+  padding: 20px 0;
+  text-align: center;
+  margin: 10px auto;
+}
