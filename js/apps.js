@@ -71,6 +71,7 @@ function showCTemp(event) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemp);
 }
+
 let celsiusTemp = null;
 search("Montreal");
 
